@@ -1,0 +1,1989 @@
+{
+ "cell": "p2-dense7/bf16/off0/b1",
+ "baseline": "p2-dense7/bf16/off0/b1",
+ "status": "REGISTERED",
+ "amendment": "A4",
+ "analysis_sha256": "2d42f13200874e51f157a564f94a4fe69ae97c5e05e9dc431ca39e533b30f5b0",
+ "run_kinds": [
+  "aa",
+  "measured"
+ ],
+ "law1": "reference",
+ "hosts": {
+  "cell": [
+   "node-e"
+  ],
+  "baseline": [
+   "node-f"
+  ]
+ },
+ "cell_determinism": {
+  "n_tasks": 105,
+  "flip_rate": 0.0,
+  "unstable_tasks": [],
+  "self_divergences": {}
+ },
+ "baseline_determinism": {
+  "n_tasks": 105,
+  "flip_rate": 0.0,
+  "unstable_tasks": [],
+  "self_divergences": {}
+ },
+ "padded_ids_sampled": [],
+ "strata": {
+  "code": {
+   "n": 50,
+   "cell_pass": 39,
+   "base_pass": 39,
+   "b": 0,
+   "c": 0,
+   "kinds": {
+    "identical": 50
+   },
+   "cell_ci": [
+    0.6475818431054045,
+    0.8724621377569771
+   ],
+   "base_ci": [
+    0.6475818431054045,
+    0.8724621377569771
+   ],
+   "mcnemar_p": 1.0,
+   "verdict": "no detectable change"
+  },
+  "math": {
+   "n": 40,
+   "cell_pass": 17,
+   "base_pass": 17,
+   "b": 0,
+   "c": 0,
+   "kinds": {
+    "identical": 40
+   },
+   "cell_ci": [
+    0.28509168524815875,
+    0.5780519956394001
+   ],
+   "base_ci": [
+    0.28509168524815875,
+    0.5780519956394001
+   ],
+   "mcnemar_p": 1.0,
+   "verdict": "no detectable change"
+  },
+  "long_context": {
+   "n": 15,
+   "cell_pass": 15,
+   "base_pass": 15,
+   "b": 0,
+   "c": 0,
+   "kinds": {
+    "identical": 15
+   },
+   "cell_ci": [
+    0.7961107336956521,
+    1.0
+   ],
+   "base_ci": [
+    0.7961107336956521,
+    1.0
+   ],
+   "mcnemar_p": 1.0,
+   "verdict": "no detectable change"
+  }
+ },
+ "worst_stratum": "code",
+ "baseline_unstable_tasks": [],
+ "tasks": {
+  "code-mbpp-102": {
+   "stratum": "code",
+   "divergence": {
+    "kind": "identical",
+    "index": null,
+    "ref_gap": null
+   },
+   "cell_pass": [
+    true,
+    true,
+    true
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  },
+  "code-mbpp-106": {
+   "stratum": "code",
+   "divergence": {
+    "kind": "identical",
+    "index": null,
+    "ref_gap": null
+   },
+   "cell_pass": [
+    true,
+    true,
+    true
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  },
+  "code-mbpp-116": {
+   "stratum": "code",
+   "divergence": {
+    "kind": "identical",
+    "index": null,
+    "ref_gap": null
+   },
+   "cell_pass": [
+    true,
+    true,
+    true
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  },
+  "code-mbpp-166": {
+   "stratum": "code",
+   "divergence": {
+    "kind": "identical",
+    "index": null,
+    "ref_gap": null
+   },
+   "cell_pass": [
+    true,
+    true,
+    true
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  },
+  "code-mbpp-222": {
+   "stratum": "code",
+   "divergence": {
+    "kind": "identical",
+    "index": null,
+    "ref_gap": null
+   },
+   "cell_pass": [
+    true,
+    true,
+    true
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  },
+  "code-mbpp-235": {
+   "stratum": "code",
+   "divergence": {
+    "kind": "identical",
+    "index": null,
+    "ref_gap": null
+   },
+   "cell_pass": [
+    false,
+    false,
+    false
+   ],
+   "base_pass": [
+    false,
+    false,
+    false
+   ]
+  },
+  "code-mbpp-240": {
+   "stratum": "code",
+   "divergence": {
+    "kind": "identical",
+    "index": null,
+    "ref_gap": null
+   },
+   "cell_pass": [
+    true,
+    true,
+    true
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  },
+  "code-mbpp-244": {
+   "stratum": "code",
+   "divergence": {
+    "kind": "identical",
+    "index": null,
+    "ref_gap": null
+   },
+   "cell_pass": [
+    false,
+    false,
+    false
+   ],
+   "base_pass": [
+    false,
+    false,
+    false
+   ]
+  },
+  "code-mbpp-245": {
+   "stratum": "code",
+   "divergence": {
+    "kind": "identical",
+    "index": null,
+    "ref_gap": null
+   },
+   "cell_pass": [
+    true,
+    true,
+    true
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  },
+  "code-mbpp-255": {
+   "stratum": "code",
+   "divergence": {
+    "kind": "identical",
+    "index": null,
+    "ref_gap": null
+   },
+   "cell_pass": [
+    false,
+    false,
+    false
+   ],
+   "base_pass": [
+    false,
+    false,
+    false
+   ]
+  },
+  "code-mbpp-261": {
+   "stratum": "code",
+   "divergence": {
+    "kind": "identical",
+    "index": null,
+    "ref_gap": null
+   },
+   "cell_pass": [
+    true,
+    true,
+    true
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  },
+  "code-mbpp-279": {
+   "stratum": "code",
+   "divergence": {
+    "kind": "identical",
+    "index": null,
+    "ref_gap": null
+   },
+   "cell_pass": [
+    true,
+    true,
+    true
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  },
+  "code-mbpp-296": {
+   "stratum": "code",
+   "divergence": {
+    "kind": "identical",
+    "index": null,
+    "ref_gap": null
+   },
+   "cell_pass": [
+    false,
+    false,
+    false
+   ],
+   "base_pass": [
+    false,
+    false,
+    false
+   ]
+  },
+  "code-mbpp-299": {
+   "stratum": "code",
+   "divergence": {
+    "kind": "identical",
+    "index": null,
+    "ref_gap": null
+   },
+   "cell_pass": [
+    false,
+    false,
+    false
+   ],
+   "base_pass": [
+    false,
+    false,
+    false
+   ]
+  },
+  "code-mbpp-308": {
+   "stratum": "code",
+   "divergence": {
+    "kind": "identical",
+    "index": null,
+    "ref_gap": null
+   },
+   "cell_pass": [
+    true,
+    true,
+    true
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  },
+  "code-mbpp-4": {
+   "stratum": "code",
+   "divergence": {
+    "kind": "identical",
+    "index": null,
+    "ref_gap": null
+   },
+   "cell_pass": [
+    true,
+    true,
+    true
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  },
+  "code-mbpp-411": {
+   "stratum": "code",
+   "divergence": {
+    "kind": "identical",
+    "index": null,
+    "ref_gap": null
+   },
+   "cell_pass": [
+    true,
+    true,
+    true
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  },
+  "code-mbpp-425": {
+   "stratum": "code",
+   "divergence": {
+    "kind": "identical",
+    "index": null,
+    "ref_gap": null
+   },
+   "cell_pass": [
+    true,
+    true,
+    true
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  },
+  "code-mbpp-430": {
+   "stratum": "code",
+   "divergence": {
+    "kind": "identical",
+    "index": null,
+    "ref_gap": null
+   },
+   "cell_pass": [
+    false,
+    false,
+    false
+   ],
+   "base_pass": [
+    false,
+    false,
+    false
+   ]
+  },
+  "code-mbpp-433": {
+   "stratum": "code",
+   "divergence": {
+    "kind": "identical",
+    "index": null,
+    "ref_gap": null
+   },
+   "cell_pass": [
+    true,
+    true,
+    true
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  },
+  "code-mbpp-441": {
+   "stratum": "code",
+   "divergence": {
+    "kind": "identical",
+    "index": null,
+    "ref_gap": null
+   },
+   "cell_pass": [
+    true,
+    true,
+    true
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  },
+  "code-mbpp-446": {
+   "stratum": "code",
+   "divergence": {
+    "kind": "identical",
+    "index": null,
+    "ref_gap": null
+   },
+   "cell_pass": [
+    true,
+    true,
+    true
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  },
+  "code-mbpp-462": {
+   "stratum": "code",
+   "divergence": {
+    "kind": "identical",
+    "index": null,
+    "ref_gap": null
+   },
+   "cell_pass": [
+    false,
+    false,
+    false
+   ],
+   "base_pass": [
+    false,
+    false,
+    false
+   ]
+  },
+  "code-mbpp-470": {
+   "stratum": "code",
+   "divergence": {
+    "kind": "identical",
+    "index": null,
+    "ref_gap": null
+   },
+   "cell_pass": [
+    true,
+    true,
+    true
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  },
+  "code-mbpp-473": {
+   "stratum": "code",
+   "divergence": {
+    "kind": "identical",
+    "index": null,
+    "ref_gap": null
+   },
+   "cell_pass": [
+    true,
+    true,
+    true
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  },
+  "code-mbpp-477": {
+   "stratum": "code",
+   "divergence": {
+    "kind": "identical",
+    "index": null,
+    "ref_gap": null
+   },
+   "cell_pass": [
+    true,
+    true,
+    true
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  },
+  "code-mbpp-554": {
+   "stratum": "code",
+   "divergence": {
+    "kind": "identical",
+    "index": null,
+    "ref_gap": null
+   },
+   "cell_pass": [
+    true,
+    true,
+    true
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  },
+  "code-mbpp-56": {
+   "stratum": "code",
+   "divergence": {
+    "kind": "identical",
+    "index": null,
+    "ref_gap": null
+   },
+   "cell_pass": [
+    false,
+    false,
+    false
+   ],
+   "base_pass": [
+    false,
+    false,
+    false
+   ]
+  },
+  "code-mbpp-583": {
+   "stratum": "code",
+   "divergence": {
+    "kind": "identical",
+    "index": null,
+    "ref_gap": null
+   },
+   "cell_pass": [
+    true,
+    true,
+    true
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  },
+  "code-mbpp-584": {
+   "stratum": "code",
+   "divergence": {
+    "kind": "identical",
+    "index": null,
+    "ref_gap": null
+   },
+   "cell_pass": [
+    true,
+    true,
+    true
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  },
+  "code-mbpp-588": {
+   "stratum": "code",
+   "divergence": {
+    "kind": "identical",
+    "index": null,
+    "ref_gap": null
+   },
+   "cell_pass": [
+    true,
+    true,
+    true
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  },
+  "code-mbpp-592": {
+   "stratum": "code",
+   "divergence": {
+    "kind": "identical",
+    "index": null,
+    "ref_gap": null
+   },
+   "cell_pass": [
+    true,
+    true,
+    true
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  },
+  "code-mbpp-599": {
+   "stratum": "code",
+   "divergence": {
+    "kind": "identical",
+    "index": null,
+    "ref_gap": null
+   },
+   "cell_pass": [
+    true,
+    true,
+    true
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  },
+  "code-mbpp-608": {
+   "stratum": "code",
+   "divergence": {
+    "kind": "identical",
+    "index": null,
+    "ref_gap": null
+   },
+   "cell_pass": [
+    true,
+    true,
+    true
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  },
+  "code-mbpp-610": {
+   "stratum": "code",
+   "divergence": {
+    "kind": "identical",
+    "index": null,
+    "ref_gap": null
+   },
+   "cell_pass": [
+    false,
+    false,
+    false
+   ],
+   "base_pass": [
+    false,
+    false,
+    false
+   ]
+  },
+  "code-mbpp-639": {
+   "stratum": "code",
+   "divergence": {
+    "kind": "identical",
+    "index": null,
+    "ref_gap": null
+   },
+   "cell_pass": [
+    true,
+    true,
+    true
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  },
+  "code-mbpp-7": {
+   "stratum": "code",
+   "divergence": {
+    "kind": "identical",
+    "index": null,
+    "ref_gap": null
+   },
+   "cell_pass": [
+    true,
+    true,
+    true
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  },
+  "code-mbpp-722": {
+   "stratum": "code",
+   "divergence": {
+    "kind": "identical",
+    "index": null,
+    "ref_gap": null
+   },
+   "cell_pass": [
+    false,
+    false,
+    false
+   ],
+   "base_pass": [
+    false,
+    false,
+    false
+   ]
+  },
+  "code-mbpp-732": {
+   "stratum": "code",
+   "divergence": {
+    "kind": "identical",
+    "index": null,
+    "ref_gap": null
+   },
+   "cell_pass": [
+    true,
+    true,
+    true
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  },
+  "code-mbpp-733": {
+   "stratum": "code",
+   "divergence": {
+    "kind": "identical",
+    "index": null,
+    "ref_gap": null
+   },
+   "cell_pass": [
+    true,
+    true,
+    true
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  },
+  "code-mbpp-757": {
+   "stratum": "code",
+   "divergence": {
+    "kind": "identical",
+    "index": null,
+    "ref_gap": null
+   },
+   "cell_pass": [
+    true,
+    true,
+    true
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  },
+  "code-mbpp-766": {
+   "stratum": "code",
+   "divergence": {
+    "kind": "identical",
+    "index": null,
+    "ref_gap": null
+   },
+   "cell_pass": [
+    true,
+    true,
+    true
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  },
+  "code-mbpp-767": {
+   "stratum": "code",
+   "divergence": {
+    "kind": "identical",
+    "index": null,
+    "ref_gap": null
+   },
+   "cell_pass": [
+    true,
+    true,
+    true
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  },
+  "code-mbpp-773": {
+   "stratum": "code",
+   "divergence": {
+    "kind": "identical",
+    "index": null,
+    "ref_gap": null
+   },
+   "cell_pass": [
+    false,
+    false,
+    false
+   ],
+   "base_pass": [
+    false,
+    false,
+    false
+   ]
+  },
+  "code-mbpp-788": {
+   "stratum": "code",
+   "divergence": {
+    "kind": "identical",
+    "index": null,
+    "ref_gap": null
+   },
+   "cell_pass": [
+    true,
+    true,
+    true
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  },
+  "code-mbpp-793": {
+   "stratum": "code",
+   "divergence": {
+    "kind": "identical",
+    "index": null,
+    "ref_gap": null
+   },
+   "cell_pass": [
+    true,
+    true,
+    true
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  },
+  "code-mbpp-804": {
+   "stratum": "code",
+   "divergence": {
+    "kind": "identical",
+    "index": null,
+    "ref_gap": null
+   },
+   "cell_pass": [
+    true,
+    true,
+    true
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  },
+  "code-mbpp-85": {
+   "stratum": "code",
+   "divergence": {
+    "kind": "identical",
+    "index": null,
+    "ref_gap": null
+   },
+   "cell_pass": [
+    true,
+    true,
+    true
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  },
+  "code-mbpp-88": {
+   "stratum": "code",
+   "divergence": {
+    "kind": "identical",
+    "index": null,
+    "ref_gap": null
+   },
+   "cell_pass": [
+    true,
+    true,
+    true
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  },
+  "code-mbpp-91": {
+   "stratum": "code",
+   "divergence": {
+    "kind": "identical",
+    "index": null,
+    "ref_gap": null
+   },
+   "cell_pass": [
+    true,
+    true,
+    true
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  },
+  "math-base-0": {
+   "stratum": "math",
+   "divergence": {
+    "kind": "identical",
+    "index": null,
+    "ref_gap": null
+   },
+   "cell_pass": [
+    false,
+    false,
+    false
+   ],
+   "base_pass": [
+    false,
+    false,
+    false
+   ]
+  },
+  "math-base-1": {
+   "stratum": "math",
+   "divergence": {
+    "kind": "identical",
+    "index": null,
+    "ref_gap": null
+   },
+   "cell_pass": [
+    true,
+    true,
+    true
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  },
+  "math-base-2": {
+   "stratum": "math",
+   "divergence": {
+    "kind": "identical",
+    "index": null,
+    "ref_gap": null
+   },
+   "cell_pass": [
+    true,
+    true,
+    true
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  },
+  "math-base-3": {
+   "stratum": "math",
+   "divergence": {
+    "kind": "identical",
+    "index": null,
+    "ref_gap": null
+   },
+   "cell_pass": [
+    true,
+    true,
+    true
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  },
+  "math-base-4": {
+   "stratum": "math",
+   "divergence": {
+    "kind": "identical",
+    "index": null,
+    "ref_gap": null
+   },
+   "cell_pass": [
+    true,
+    true,
+    true
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  },
+  "math-count_div-0": {
+   "stratum": "math",
+   "divergence": {
+    "kind": "identical",
+    "index": null,
+    "ref_gap": null
+   },
+   "cell_pass": [
+    false,
+    false,
+    false
+   ],
+   "base_pass": [
+    false,
+    false,
+    false
+   ]
+  },
+  "math-count_div-1": {
+   "stratum": "math",
+   "divergence": {
+    "kind": "identical",
+    "index": null,
+    "ref_gap": null
+   },
+   "cell_pass": [
+    false,
+    false,
+    false
+   ],
+   "base_pass": [
+    false,
+    false,
+    false
+   ]
+  },
+  "math-count_div-2": {
+   "stratum": "math",
+   "divergence": {
+    "kind": "identical",
+    "index": null,
+    "ref_gap": null
+   },
+   "cell_pass": [
+    false,
+    false,
+    false
+   ],
+   "base_pass": [
+    false,
+    false,
+    false
+   ]
+  },
+  "math-count_div-3": {
+   "stratum": "math",
+   "divergence": {
+    "kind": "identical",
+    "index": null,
+    "ref_gap": null
+   },
+   "cell_pass": [
+    false,
+    false,
+    false
+   ],
+   "base_pass": [
+    false,
+    false,
+    false
+   ]
+  },
+  "math-count_div-4": {
+   "stratum": "math",
+   "divergence": {
+    "kind": "identical",
+    "index": null,
+    "ref_gap": null
+   },
+   "cell_pass": [
+    false,
+    false,
+    false
+   ],
+   "base_pass": [
+    false,
+    false,
+    false
+   ]
+  },
+  "math-digit_sum_pow-0": {
+   "stratum": "math",
+   "divergence": {
+    "kind": "identical",
+    "index": null,
+    "ref_gap": null
+   },
+   "cell_pass": [
+    false,
+    false,
+    false
+   ],
+   "base_pass": [
+    false,
+    false,
+    false
+   ]
+  },
+  "math-digit_sum_pow-1": {
+   "stratum": "math",
+   "divergence": {
+    "kind": "identical",
+    "index": null,
+    "ref_gap": null
+   },
+   "cell_pass": [
+    true,
+    true,
+    true
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  },
+  "math-digit_sum_pow-2": {
+   "stratum": "math",
+   "divergence": {
+    "kind": "identical",
+    "index": null,
+    "ref_gap": null
+   },
+   "cell_pass": [
+    false,
+    false,
+    false
+   ],
+   "base_pass": [
+    false,
+    false,
+    false
+   ]
+  },
+  "math-digit_sum_pow-3": {
+   "stratum": "math",
+   "divergence": {
+    "kind": "identical",
+    "index": null,
+    "ref_gap": null
+   },
+   "cell_pass": [
+    false,
+    false,
+    false
+   ],
+   "base_pass": [
+    false,
+    false,
+    false
+   ]
+  },
+  "math-digit_sum_pow-4": {
+   "stratum": "math",
+   "divergence": {
+    "kind": "identical",
+    "index": null,
+    "ref_gap": null
+   },
+   "cell_pass": [
+    true,
+    true,
+    true
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  },
+  "math-expr-0": {
+   "stratum": "math",
+   "divergence": {
+    "kind": "identical",
+    "index": null,
+    "ref_gap": null
+   },
+   "cell_pass": [
+    false,
+    false,
+    false
+   ],
+   "base_pass": [
+    false,
+    false,
+    false
+   ]
+  },
+  "math-expr-1": {
+   "stratum": "math",
+   "divergence": {
+    "kind": "identical",
+    "index": null,
+    "ref_gap": null
+   },
+   "cell_pass": [
+    false,
+    false,
+    false
+   ],
+   "base_pass": [
+    false,
+    false,
+    false
+   ]
+  },
+  "math-expr-2": {
+   "stratum": "math",
+   "divergence": {
+    "kind": "identical",
+    "index": null,
+    "ref_gap": null
+   },
+   "cell_pass": [
+    true,
+    true,
+    true
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  },
+  "math-expr-3": {
+   "stratum": "math",
+   "divergence": {
+    "kind": "identical",
+    "index": null,
+    "ref_gap": null
+   },
+   "cell_pass": [
+    false,
+    false,
+    false
+   ],
+   "base_pass": [
+    false,
+    false,
+    false
+   ]
+  },
+  "math-expr-4": {
+   "stratum": "math",
+   "divergence": {
+    "kind": "identical",
+    "index": null,
+    "ref_gap": null
+   },
+   "cell_pass": [
+    false,
+    false,
+    false
+   ],
+   "base_pass": [
+    false,
+    false,
+    false
+   ]
+  },
+  "math-gcd_lcm-0": {
+   "stratum": "math",
+   "divergence": {
+    "kind": "identical",
+    "index": null,
+    "ref_gap": null
+   },
+   "cell_pass": [
+    true,
+    true,
+    true
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  },
+  "math-gcd_lcm-1": {
+   "stratum": "math",
+   "divergence": {
+    "kind": "identical",
+    "index": null,
+    "ref_gap": null
+   },
+   "cell_pass": [
+    false,
+    false,
+    false
+   ],
+   "base_pass": [
+    false,
+    false,
+    false
+   ]
+  },
+  "math-gcd_lcm-2": {
+   "stratum": "math",
+   "divergence": {
+    "kind": "identical",
+    "index": null,
+    "ref_gap": null
+   },
+   "cell_pass": [
+    false,
+    false,
+    false
+   ],
+   "base_pass": [
+    false,
+    false,
+    false
+   ]
+  },
+  "math-gcd_lcm-3": {
+   "stratum": "math",
+   "divergence": {
+    "kind": "identical",
+    "index": null,
+    "ref_gap": null
+   },
+   "cell_pass": [
+    false,
+    false,
+    false
+   ],
+   "base_pass": [
+    false,
+    false,
+    false
+   ]
+  },
+  "math-gcd_lcm-4": {
+   "stratum": "math",
+   "divergence": {
+    "kind": "identical",
+    "index": null,
+    "ref_gap": null
+   },
+   "cell_pass": [
+    false,
+    false,
+    false
+   ],
+   "base_pass": [
+    false,
+    false,
+    false
+   ]
+  },
+  "math-modpow-0": {
+   "stratum": "math",
+   "divergence": {
+    "kind": "identical",
+    "index": null,
+    "ref_gap": null
+   },
+   "cell_pass": [
+    true,
+    true,
+    true
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  },
+  "math-modpow-1": {
+   "stratum": "math",
+   "divergence": {
+    "kind": "identical",
+    "index": null,
+    "ref_gap": null
+   },
+   "cell_pass": [
+    true,
+    true,
+    true
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  },
+  "math-modpow-2": {
+   "stratum": "math",
+   "divergence": {
+    "kind": "identical",
+    "index": null,
+    "ref_gap": null
+   },
+   "cell_pass": [
+    true,
+    true,
+    true
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  },
+  "math-modpow-3": {
+   "stratum": "math",
+   "divergence": {
+    "kind": "identical",
+    "index": null,
+    "ref_gap": null
+   },
+   "cell_pass": [
+    true,
+    true,
+    true
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  },
+  "math-modpow-4": {
+   "stratum": "math",
+   "divergence": {
+    "kind": "identical",
+    "index": null,
+    "ref_gap": null
+   },
+   "cell_pass": [
+    false,
+    false,
+    false
+   ],
+   "base_pass": [
+    false,
+    false,
+    false
+   ]
+  },
+  "math-series-0": {
+   "stratum": "math",
+   "divergence": {
+    "kind": "identical",
+    "index": null,
+    "ref_gap": null
+   },
+   "cell_pass": [
+    false,
+    false,
+    false
+   ],
+   "base_pass": [
+    false,
+    false,
+    false
+   ]
+  },
+  "math-series-1": {
+   "stratum": "math",
+   "divergence": {
+    "kind": "identical",
+    "index": null,
+    "ref_gap": null
+   },
+   "cell_pass": [
+    false,
+    false,
+    false
+   ],
+   "base_pass": [
+    false,
+    false,
+    false
+   ]
+  },
+  "math-series-2": {
+   "stratum": "math",
+   "divergence": {
+    "kind": "identical",
+    "index": null,
+    "ref_gap": null
+   },
+   "cell_pass": [
+    false,
+    false,
+    false
+   ],
+   "base_pass": [
+    false,
+    false,
+    false
+   ]
+  },
+  "math-series-3": {
+   "stratum": "math",
+   "divergence": {
+    "kind": "identical",
+    "index": null,
+    "ref_gap": null
+   },
+   "cell_pass": [
+    false,
+    false,
+    false
+   ],
+   "base_pass": [
+    false,
+    false,
+    false
+   ]
+  },
+  "math-series-4": {
+   "stratum": "math",
+   "divergence": {
+    "kind": "identical",
+    "index": null,
+    "ref_gap": null
+   },
+   "cell_pass": [
+    false,
+    false,
+    false
+   ],
+   "base_pass": [
+    false,
+    false,
+    false
+   ]
+  },
+  "math-tank-0": {
+   "stratum": "math",
+   "divergence": {
+    "kind": "identical",
+    "index": null,
+    "ref_gap": null
+   },
+   "cell_pass": [
+    true,
+    true,
+    true
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  },
+  "math-tank-1": {
+   "stratum": "math",
+   "divergence": {
+    "kind": "identical",
+    "index": null,
+    "ref_gap": null
+   },
+   "cell_pass": [
+    true,
+    true,
+    true
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  },
+  "math-tank-2": {
+   "stratum": "math",
+   "divergence": {
+    "kind": "identical",
+    "index": null,
+    "ref_gap": null
+   },
+   "cell_pass": [
+    true,
+    true,
+    true
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  },
+  "math-tank-3": {
+   "stratum": "math",
+   "divergence": {
+    "kind": "identical",
+    "index": null,
+    "ref_gap": null
+   },
+   "cell_pass": [
+    true,
+    true,
+    true
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  },
+  "math-tank-4": {
+   "stratum": "math",
+   "divergence": {
+    "kind": "identical",
+    "index": null,
+    "ref_gap": null
+   },
+   "cell_pass": [
+    true,
+    true,
+    true
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  },
+  "needle-16k-d10": {
+   "stratum": "long_context",
+   "divergence": {
+    "kind": "identical",
+    "index": null,
+    "ref_gap": null
+   },
+   "cell_pass": [
+    true,
+    true,
+    true
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  },
+  "needle-16k-d30": {
+   "stratum": "long_context",
+   "divergence": {
+    "kind": "identical",
+    "index": null,
+    "ref_gap": null
+   },
+   "cell_pass": [
+    true,
+    true,
+    true
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  },
+  "needle-16k-d50": {
+   "stratum": "long_context",
+   "divergence": {
+    "kind": "identical",
+    "index": null,
+    "ref_gap": null
+   },
+   "cell_pass": [
+    true,
+    true,
+    true
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  },
+  "needle-16k-d70": {
+   "stratum": "long_context",
+   "divergence": {
+    "kind": "identical",
+    "index": null,
+    "ref_gap": null
+   },
+   "cell_pass": [
+    true,
+    true,
+    true
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  },
+  "needle-16k-d90": {
+   "stratum": "long_context",
+   "divergence": {
+    "kind": "identical",
+    "index": null,
+    "ref_gap": null
+   },
+   "cell_pass": [
+    true,
+    true,
+    true
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  },
+  "needle-32k-d10": {
+   "stratum": "long_context",
+   "divergence": {
+    "kind": "identical",
+    "index": null,
+    "ref_gap": null
+   },
+   "cell_pass": [
+    true,
+    true,
+    true
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  },
+  "needle-32k-d30": {
+   "stratum": "long_context",
+   "divergence": {
+    "kind": "identical",
+    "index": null,
+    "ref_gap": null
+   },
+   "cell_pass": [
+    true,
+    true,
+    true
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  },
+  "needle-32k-d50": {
+   "stratum": "long_context",
+   "divergence": {
+    "kind": "identical",
+    "index": null,
+    "ref_gap": null
+   },
+   "cell_pass": [
+    true,
+    true,
+    true
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  },
+  "needle-32k-d70": {
+   "stratum": "long_context",
+   "divergence": {
+    "kind": "identical",
+    "index": null,
+    "ref_gap": null
+   },
+   "cell_pass": [
+    true,
+    true,
+    true
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  },
+  "needle-32k-d90": {
+   "stratum": "long_context",
+   "divergence": {
+    "kind": "identical",
+    "index": null,
+    "ref_gap": null
+   },
+   "cell_pass": [
+    true,
+    true,
+    true
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  },
+  "needle-8k-d10": {
+   "stratum": "long_context",
+   "divergence": {
+    "kind": "identical",
+    "index": null,
+    "ref_gap": null
+   },
+   "cell_pass": [
+    true,
+    true,
+    true
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  },
+  "needle-8k-d30": {
+   "stratum": "long_context",
+   "divergence": {
+    "kind": "identical",
+    "index": null,
+    "ref_gap": null
+   },
+   "cell_pass": [
+    true,
+    true,
+    true
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  },
+  "needle-8k-d50": {
+   "stratum": "long_context",
+   "divergence": {
+    "kind": "identical",
+    "index": null,
+    "ref_gap": null
+   },
+   "cell_pass": [
+    true,
+    true,
+    true
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  },
+  "needle-8k-d70": {
+   "stratum": "long_context",
+   "divergence": {
+    "kind": "identical",
+    "index": null,
+    "ref_gap": null
+   },
+   "cell_pass": [
+    true,
+    true,
+    true
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  },
+  "needle-8k-d90": {
+   "stratum": "long_context",
+   "divergence": {
+    "kind": "identical",
+    "index": null,
+    "ref_gap": null
+   },
+   "cell_pass": [
+    true,
+    true,
+    true
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  }
+ }
+}

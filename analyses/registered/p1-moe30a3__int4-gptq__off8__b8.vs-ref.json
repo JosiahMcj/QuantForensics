@@ -1,0 +1,2488 @@
+{
+ "cell": "p1-moe30a3/int4-gptq/off8/b8",
+ "baseline": "p1-moe30a3/bf16/off0/b1",
+ "status": "REGISTERED",
+ "amendment": "A2",
+ "analysis_sha256": "2d42f13200874e51f157a564f94a4fe69ae97c5e05e9dc431ca39e533b30f5b0",
+ "run_kinds": [
+  "measured"
+ ],
+ "law1": "declared-only (published quant; source revision not verifiable)",
+ "hosts": {
+  "cell": [
+   "node-d"
+  ],
+  "baseline": [
+   "node-c"
+  ]
+ },
+ "cell_determinism": {
+  "n_tasks": 105,
+  "flip_rate": 0.5619047619047619,
+  "unstable_tasks": [
+   "code-mbpp-106",
+   "code-mbpp-222",
+   "code-mbpp-235",
+   "code-mbpp-245",
+   "code-mbpp-261",
+   "code-mbpp-296",
+   "code-mbpp-308",
+   "code-mbpp-473",
+   "code-mbpp-56",
+   "code-mbpp-608",
+   "code-mbpp-610",
+   "code-mbpp-767",
+   "code-mbpp-793",
+   "code-mbpp-804",
+   "math-base-0",
+   "math-base-1",
+   "math-base-2",
+   "math-base-3",
+   "math-base-4",
+   "math-count_div-0",
+   "math-count_div-1",
+   "math-count_div-2",
+   "math-count_div-3",
+   "math-count_div-4",
+   "math-digit_sum_pow-0",
+   "math-digit_sum_pow-2",
+   "math-digit_sum_pow-3",
+   "math-digit_sum_pow-4",
+   "math-expr-0",
+   "math-expr-1",
+   "math-expr-2",
+   "math-expr-3",
+   "math-expr-4",
+   "math-gcd_lcm-0",
+   "math-gcd_lcm-1",
+   "math-gcd_lcm-2",
+   "math-gcd_lcm-3",
+   "math-gcd_lcm-4",
+   "math-modpow-1",
+   "math-modpow-2",
+   "math-modpow-3",
+   "math-modpow-4",
+   "math-series-0",
+   "math-series-1",
+   "math-series-2",
+   "math-series-3",
+   "math-series-4",
+   "math-tank-0",
+   "math-tank-2",
+   "math-tank-3",
+   "math-tank-4",
+   "needle-16k-d10",
+   "needle-16k-d30",
+   "needle-16k-d50",
+   "needle-16k-d90",
+   "needle-32k-d30",
+   "needle-32k-d90",
+   "needle-8k-d10",
+   "needle-8k-d50"
+  ],
+  "self_divergences": {
+   "code-mbpp-106": {
+    "repeat": 1,
+    "kind": "near_tie_flip",
+    "index": 16,
+    "ref_gap": 0.0
+   },
+   "code-mbpp-222": {
+    "repeat": 1,
+    "kind": "real_break",
+    "index": 62,
+    "ref_gap": 1.4999999403953552
+   },
+   "code-mbpp-235": {
+    "repeat": 1,
+    "kind": "near_tie_flip",
+    "index": 90,
+    "ref_gap": 0.0
+   },
+   "code-mbpp-245": {
+    "repeat": 1,
+    "kind": "near_tie_flip",
+    "index": 254,
+    "ref_gap": 0.0
+   },
+   "code-mbpp-261": {
+    "repeat": 2,
+    "kind": "real_break",
+    "index": 74,
+    "ref_gap": 0.7499999403953552
+   },
+   "code-mbpp-296": {
+    "repeat": 1,
+    "kind": "real_break",
+    "index": 40,
+    "ref_gap": 0.5
+   },
+   "code-mbpp-308": {
+    "repeat": 1,
+    "kind": "real_break",
+    "index": 93,
+    "ref_gap": 0.4999999701976776
+   },
+   "code-mbpp-473": {
+    "repeat": 1,
+    "kind": "real_break",
+    "index": 25,
+    "ref_gap": 0.4999999403953552
+   },
+   "code-mbpp-56": {
+    "repeat": 2,
+    "kind": "real_break",
+    "index": 33,
+    "ref_gap": 0.5
+   },
+   "code-mbpp-608": {
+    "repeat": 2,
+    "kind": "real_break",
+    "index": 46,
+    "ref_gap": 1.0000000596046448
+   },
+   "code-mbpp-610": {
+    "repeat": 1,
+    "kind": "real_break",
+    "index": 39,
+    "ref_gap": 0.4999999701976776
+   },
+   "code-mbpp-767": {
+    "repeat": 1,
+    "kind": "real_break",
+    "index": 29,
+    "ref_gap": 0.9999999701976776
+   },
+   "code-mbpp-793": {
+    "repeat": 2,
+    "kind": "near_tie_flip",
+    "index": 79,
+    "ref_gap": 0.0
+   },
+   "code-mbpp-804": {
+    "repeat": 1,
+    "kind": "near_tie_flip",
+    "index": 10,
+    "ref_gap": 0.0
+   },
+   "math-base-0": {
+    "repeat": 1,
+    "kind": "near_tie_flip",
+    "index": 44,
+    "ref_gap": 0.0
+   },
+   "math-base-1": {
+    "repeat": 1,
+    "kind": "real_break",
+    "index": 19,
+    "ref_gap": 0.2500000596046448
+   },
+   "math-base-2": {
+    "repeat": 1,
+    "kind": "near_tie_flip",
+    "index": 84,
+    "ref_gap": 0.24999994039535522
+   },
+   "math-base-3": {
+    "repeat": 1,
+    "kind": "near_tie_flip",
+    "index": 1,
+    "ref_gap": 0.0
+   },
+   "math-base-4": {
+    "repeat": 1,
+    "kind": "real_break",
+    "index": 44,
+    "ref_gap": 0.5
+   },
+   "math-count_div-0": {
+    "repeat": 1,
+    "kind": "real_break",
+    "index": 243,
+    "ref_gap": 0.2500000596046448
+   },
+   "math-count_div-1": {
+    "repeat": 1,
+    "kind": "near_tie_flip",
+    "index": 262,
+    "ref_gap": 0.0
+   },
+   "math-count_div-2": {
+    "repeat": 1,
+    "kind": "real_break",
+    "index": 25,
+    "ref_gap": 0.25
+   },
+   "math-count_div-3": {
+    "repeat": 1,
+    "kind": "real_break",
+    "index": 32,
+    "ref_gap": 0.25
+   },
+   "math-count_div-4": {
+    "repeat": 1,
+    "kind": "real_break",
+    "index": 25,
+    "ref_gap": 0.25
+   },
+   "math-digit_sum_pow-0": {
+    "repeat": 1,
+    "kind": "near_tie_flip",
+    "index": 89,
+    "ref_gap": 0.0
+   },
+   "math-digit_sum_pow-2": {
+    "repeat": 1,
+    "kind": "real_break",
+    "index": 36,
+    "ref_gap": 0.25
+   },
+   "math-digit_sum_pow-3": {
+    "repeat": 1,
+    "kind": "real_break",
+    "index": 98,
+    "ref_gap": 0.25
+   },
+   "math-digit_sum_pow-4": {
+    "repeat": 1,
+    "kind": "real_break",
+    "index": 23,
+    "ref_gap": 0.25
+   },
+   "math-expr-0": {
+    "repeat": 1,
+    "kind": "near_tie_flip",
+    "index": 115,
+    "ref_gap": 0.0
+   },
+   "math-expr-1": {
+    "repeat": 1,
+    "kind": "real_break",
+    "index": 68,
+    "ref_gap": 3.625000074505806
+   },
+   "math-expr-2": {
+    "repeat": 1,
+    "kind": "near_tie_flip",
+    "index": 50,
+    "ref_gap": 0.0
+   },
+   "math-expr-3": {
+    "repeat": 1,
+    "kind": "real_break",
+    "index": 227,
+    "ref_gap": 0.5
+   },
+   "math-expr-4": {
+    "repeat": 1,
+    "kind": "real_break",
+    "index": 50,
+    "ref_gap": 0.25
+   },
+   "math-gcd_lcm-0": {
+    "repeat": 1,
+    "kind": "real_break",
+    "index": 202,
+    "ref_gap": 0.25
+   },
+   "math-gcd_lcm-1": {
+    "repeat": 1,
+    "kind": "real_break",
+    "index": 0,
+    "ref_gap": 0.25
+   },
+   "math-gcd_lcm-2": {
+    "repeat": 1,
+    "kind": "near_tie_flip",
+    "index": 3,
+    "ref_gap": 0.0
+   },
+   "math-gcd_lcm-3": {
+    "repeat": 1,
+    "kind": "near_tie_flip",
+    "index": 7,
+    "ref_gap": 0.0
+   },
+   "math-gcd_lcm-4": {
+    "repeat": 1,
+    "kind": "real_break",
+    "index": 380,
+    "ref_gap": 0.375
+   },
+   "math-modpow-1": {
+    "repeat": 1,
+    "kind": "near_tie_flip",
+    "index": 141,
+    "ref_gap": 0.125
+   },
+   "math-modpow-2": {
+    "repeat": 1,
+    "kind": "near_tie_flip",
+    "index": 71,
+    "ref_gap": 0.0
+   },
+   "math-modpow-3": {
+    "repeat": 1,
+    "kind": "real_break",
+    "index": 44,
+    "ref_gap": 0.375
+   },
+   "math-modpow-4": {
+    "repeat": 1,
+    "kind": "real_break",
+    "index": 223,
+    "ref_gap": 0.25
+   },
+   "math-series-0": {
+    "repeat": 1,
+    "kind": "near_tie_flip",
+    "index": 356,
+    "ref_gap": 0.125
+   },
+   "math-series-1": {
+    "repeat": 1,
+    "kind": "near_tie_flip",
+    "index": 25,
+    "ref_gap": 0.0
+   },
+   "math-series-2": {
+    "repeat": 1,
+    "kind": "near_tie_flip",
+    "index": 2,
+    "ref_gap": 0.0
+   },
+   "math-series-3": {
+    "repeat": 1,
+    "kind": "real_break",
+    "index": 2,
+    "ref_gap": 0.25
+   },
+   "math-series-4": {
+    "repeat": 1,
+    "kind": "near_tie_flip",
+    "index": 54,
+    "ref_gap": 0.0
+   },
+   "math-tank-0": {
+    "repeat": 2,
+    "kind": "near_tie_flip",
+    "index": 102,
+    "ref_gap": 0.0
+   },
+   "math-tank-2": {
+    "repeat": 1,
+    "kind": "real_break",
+    "index": 34,
+    "ref_gap": 0.4999999403953552
+   },
+   "math-tank-3": {
+    "repeat": 1,
+    "kind": "real_break",
+    "index": 71,
+    "ref_gap": 0.5000000596046448
+   },
+   "math-tank-4": {
+    "repeat": 2,
+    "kind": "real_break",
+    "index": 26,
+    "ref_gap": 1.0
+   },
+   "needle-16k-d10": {
+    "repeat": 2,
+    "kind": "real_break",
+    "index": 0,
+    "ref_gap": 1.7499999701976776
+   },
+   "needle-16k-d30": {
+    "repeat": 2,
+    "kind": "real_break",
+    "index": 1,
+    "ref_gap": 0.5000000298023224
+   },
+   "needle-16k-d50": {
+    "repeat": 1,
+    "kind": "real_break",
+    "index": 0,
+    "ref_gap": 0.9999999701976776
+   },
+   "needle-16k-d90": {
+    "repeat": 1,
+    "kind": "real_break",
+    "index": 0,
+    "ref_gap": 1.2500000596046448
+   },
+   "needle-32k-d30": {
+    "repeat": 1,
+    "kind": "real_break",
+    "index": 1,
+    "ref_gap": 1.7499999552965164
+   },
+   "needle-32k-d90": {
+    "repeat": 1,
+    "kind": "real_break",
+    "index": 19,
+    "ref_gap": 1.7499999403953552
+   },
+   "needle-8k-d10": {
+    "repeat": 1,
+    "kind": "real_break",
+    "index": 1,
+    "ref_gap": 0.7500000596046448
+   },
+   "needle-8k-d50": {
+    "repeat": 1,
+    "kind": "real_break",
+    "index": 0,
+    "ref_gap": 1.4999999552965164
+   }
+  }
+ },
+ "baseline_determinism": {
+  "n_tasks": 105,
+  "flip_rate": 0.0,
+  "unstable_tasks": [],
+  "self_divergences": {}
+ },
+ "padded_ids_sampled": [],
+ "strata": {
+  "code": {
+   "n": 50,
+   "cell_pass": 43,
+   "base_pass": 42,
+   "b": 1,
+   "c": 2,
+   "kinds": {
+    "real_break": 30,
+    "identical": 17,
+    "near_tie_flip": 3
+   },
+   "cell_ci": [
+    0.738135428014719,
+    0.9304925473797714
+   ],
+   "base_ci": [
+    0.7148551903823401,
+    0.9166267863791231
+   ],
+   "mcnemar_p": 1.0,
+   "verdict": "no detectable change"
+  },
+  "math": {
+   "n": 40,
+   "cell_pass": 27,
+   "base_pass": 32,
+   "b": 7,
+   "c": 2,
+   "kinds": {
+    "real_break": 39,
+    "identical": 1
+   },
+   "cell_ci": [
+    0.52017458088898,
+    0.7991568303733828
+   ],
+   "base_ci": [
+    0.6524239261814333,
+    0.8950013502683314
+   ],
+   "mcnemar_p": 0.1796875,
+   "verdict": "no detectable change"
+  },
+  "long_context": {
+   "n": 15,
+   "cell_pass": 14,
+   "base_pass": 15,
+   "b": 1,
+   "c": 0,
+   "kinds": {
+    "identical": 6,
+    "real_break": 9
+   },
+   "cell_ci": [
+    0.7018292244757601,
+    0.9881334113938051
+   ],
+   "base_ci": [
+    0.7961107336956521,
+    1.0
+   ],
+   "mcnemar_p": 1.0,
+   "verdict": "no detectable change"
+  }
+ },
+ "worst_stratum": "math",
+ "baseline_unstable_tasks": [],
+ "tasks": {
+  "code-mbpp-102": {
+   "stratum": "code",
+   "divergence": {
+    "kind": "real_break",
+    "index": 38,
+    "ref_gap": 8.499999687308446,
+    "took_baseline_top2": true
+   },
+   "cell_pass": [
+    true,
+    true,
+    true
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  },
+  "code-mbpp-106": {
+   "stratum": "code",
+   "divergence": {
+    "kind": "identical",
+    "index": null,
+    "ref_gap": null
+   },
+   "cell_pass": [
+    true,
+    true,
+    true
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  },
+  "code-mbpp-116": {
+   "stratum": "code",
+   "divergence": {
+    "kind": "identical",
+    "index": null,
+    "ref_gap": null
+   },
+   "cell_pass": [
+    true,
+    true,
+    true
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  },
+  "code-mbpp-166": {
+   "stratum": "code",
+   "divergence": {
+    "kind": "real_break",
+    "index": 10,
+    "ref_gap": 0.25,
+    "took_baseline_top2": true
+   },
+   "cell_pass": [
+    true,
+    true,
+    true
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  },
+  "code-mbpp-222": {
+   "stratum": "code",
+   "divergence": {
+    "kind": "real_break",
+    "index": 38,
+    "ref_gap": 2.2500000298023224,
+    "took_baseline_top2": true
+   },
+   "cell_pass": [
+    true,
+    true,
+    true
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  },
+  "code-mbpp-235": {
+   "stratum": "code",
+   "divergence": {
+    "kind": "real_break",
+    "index": 36,
+    "ref_gap": 4.250000071711838,
+    "took_baseline_top2": true
+   },
+   "cell_pass": [
+    false,
+    false,
+    false
+   ],
+   "base_pass": [
+    false,
+    false,
+    false
+   ]
+  },
+  "code-mbpp-240": {
+   "stratum": "code",
+   "divergence": {
+    "kind": "real_break",
+    "index": 6,
+    "ref_gap": 0.5000000596046448,
+    "took_baseline_top2": false
+   },
+   "cell_pass": [
+    true,
+    true,
+    true
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  },
+  "code-mbpp-244": {
+   "stratum": "code",
+   "divergence": {
+    "kind": "real_break",
+    "index": 15,
+    "ref_gap": 2.499999985098839,
+    "took_baseline_top2": false
+   },
+   "cell_pass": [
+    true,
+    true,
+    true
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  },
+  "code-mbpp-245": {
+   "stratum": "code",
+   "divergence": {
+    "kind": "real_break",
+    "index": 38,
+    "ref_gap": 2.4999998956918716,
+    "took_baseline_top2": true
+   },
+   "cell_pass": [
+    false,
+    false,
+    false
+   ],
+   "base_pass": [
+    false,
+    false,
+    false
+   ]
+  },
+  "code-mbpp-255": {
+   "stratum": "code",
+   "divergence": {
+    "kind": "real_break",
+    "index": 6,
+    "ref_gap": 1.2500000298023224,
+    "took_baseline_top2": true
+   },
+   "cell_pass": [
+    true,
+    true,
+    true
+   ],
+   "base_pass": [
+    false,
+    false,
+    false
+   ]
+  },
+  "code-mbpp-261": {
+   "stratum": "code",
+   "divergence": {
+    "kind": "real_break",
+    "index": 36,
+    "ref_gap": 2.249999962747097,
+    "took_baseline_top2": true
+   },
+   "cell_pass": [
+    true,
+    true,
+    true
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  },
+  "code-mbpp-279": {
+   "stratum": "code",
+   "divergence": {
+    "kind": "identical",
+    "index": null,
+    "ref_gap": null
+   },
+   "cell_pass": [
+    true,
+    true,
+    true
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  },
+  "code-mbpp-296": {
+   "stratum": "code",
+   "divergence": {
+    "kind": "near_tie_flip",
+    "index": 12,
+    "ref_gap": 0.125,
+    "took_baseline_top2": true
+   },
+   "cell_pass": [
+    true,
+    true,
+    true
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  },
+  "code-mbpp-299": {
+   "stratum": "code",
+   "divergence": {
+    "kind": "identical",
+    "index": null,
+    "ref_gap": null
+   },
+   "cell_pass": [
+    true,
+    true,
+    true
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  },
+  "code-mbpp-308": {
+   "stratum": "code",
+   "divergence": {
+    "kind": "real_break",
+    "index": 28,
+    "ref_gap": 1.0000000298023224,
+    "took_baseline_top2": true
+   },
+   "cell_pass": [
+    true,
+    true,
+    true
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  },
+  "code-mbpp-4": {
+   "stratum": "code",
+   "divergence": {
+    "kind": "identical",
+    "index": null,
+    "ref_gap": null
+   },
+   "cell_pass": [
+    true,
+    true,
+    true
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  },
+  "code-mbpp-411": {
+   "stratum": "code",
+   "divergence": {
+    "kind": "real_break",
+    "index": 42,
+    "ref_gap": 2.9999998919665813,
+    "took_baseline_top2": true
+   },
+   "cell_pass": [
+    true,
+    true,
+    true
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  },
+  "code-mbpp-425": {
+   "stratum": "code",
+   "divergence": {
+    "kind": "identical",
+    "index": null,
+    "ref_gap": null
+   },
+   "cell_pass": [
+    true,
+    true,
+    true
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  },
+  "code-mbpp-430": {
+   "stratum": "code",
+   "divergence": {
+    "kind": "real_break",
+    "index": 43,
+    "ref_gap": 0.25,
+    "took_baseline_top2": true
+   },
+   "cell_pass": [
+    false,
+    false,
+    false
+   ],
+   "base_pass": [
+    false,
+    false,
+    false
+   ]
+  },
+  "code-mbpp-433": {
+   "stratum": "code",
+   "divergence": {
+    "kind": "real_break",
+    "index": 27,
+    "ref_gap": 0.9999999701976776,
+    "took_baseline_top2": true
+   },
+   "cell_pass": [
+    true,
+    true,
+    true
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  },
+  "code-mbpp-441": {
+   "stratum": "code",
+   "divergence": {
+    "kind": "real_break",
+    "index": 28,
+    "ref_gap": 0.9999999701976776,
+    "took_baseline_top2": true
+   },
+   "cell_pass": [
+    true,
+    true,
+    true
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  },
+  "code-mbpp-446": {
+   "stratum": "code",
+   "divergence": {
+    "kind": "real_break",
+    "index": 43,
+    "ref_gap": 0.25,
+    "took_baseline_top2": true
+   },
+   "cell_pass": [
+    true,
+    true,
+    true
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  },
+  "code-mbpp-462": {
+   "stratum": "code",
+   "divergence": {
+    "kind": "real_break",
+    "index": 48,
+    "ref_gap": 0.25,
+    "took_baseline_top2": true
+   },
+   "cell_pass": [
+    false,
+    false,
+    false
+   ],
+   "base_pass": [
+    false,
+    false,
+    false
+   ]
+  },
+  "code-mbpp-470": {
+   "stratum": "code",
+   "divergence": {
+    "kind": "identical",
+    "index": null,
+    "ref_gap": null
+   },
+   "cell_pass": [
+    true,
+    true,
+    true
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  },
+  "code-mbpp-473": {
+   "stratum": "code",
+   "divergence": {
+    "kind": "real_break",
+    "index": 22,
+    "ref_gap": 1.2500000298023224,
+    "took_baseline_top2": true
+   },
+   "cell_pass": [
+    true,
+    false,
+    true
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  },
+  "code-mbpp-477": {
+   "stratum": "code",
+   "divergence": {
+    "kind": "real_break",
+    "index": 15,
+    "ref_gap": 0.25,
+    "took_baseline_top2": true
+   },
+   "cell_pass": [
+    true,
+    true,
+    true
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  },
+  "code-mbpp-554": {
+   "stratum": "code",
+   "divergence": {
+    "kind": "real_break",
+    "index": 23,
+    "ref_gap": 0.9999999701976776,
+    "took_baseline_top2": true
+   },
+   "cell_pass": [
+    true,
+    true,
+    true
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  },
+  "code-mbpp-56": {
+   "stratum": "code",
+   "divergence": {
+    "kind": "real_break",
+    "index": 8,
+    "ref_gap": 2.2500000596046448,
+    "took_baseline_top2": true
+   },
+   "cell_pass": [
+    true,
+    true,
+    true
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  },
+  "code-mbpp-583": {
+   "stratum": "code",
+   "divergence": {
+    "kind": "near_tie_flip",
+    "index": 10,
+    "ref_gap": 0.24999994039535522,
+    "took_baseline_top2": true
+   },
+   "cell_pass": [
+    true,
+    true,
+    true
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  },
+  "code-mbpp-584": {
+   "stratum": "code",
+   "divergence": {
+    "kind": "real_break",
+    "index": 62,
+    "ref_gap": 1.5000000596046448,
+    "took_baseline_top2": true
+   },
+   "cell_pass": [
+    true,
+    true,
+    true
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  },
+  "code-mbpp-588": {
+   "stratum": "code",
+   "divergence": {
+    "kind": "real_break",
+    "index": 14,
+    "ref_gap": 0.25,
+    "took_baseline_top2": true
+   },
+   "cell_pass": [
+    true,
+    true,
+    true
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  },
+  "code-mbpp-592": {
+   "stratum": "code",
+   "divergence": {
+    "kind": "identical",
+    "index": null,
+    "ref_gap": null
+   },
+   "cell_pass": [
+    false,
+    false,
+    false
+   ],
+   "base_pass": [
+    false,
+    false,
+    false
+   ]
+  },
+  "code-mbpp-599": {
+   "stratum": "code",
+   "divergence": {
+    "kind": "identical",
+    "index": null,
+    "ref_gap": null
+   },
+   "cell_pass": [
+    true,
+    true,
+    true
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  },
+  "code-mbpp-608": {
+   "stratum": "code",
+   "divergence": {
+    "kind": "real_break",
+    "index": 9,
+    "ref_gap": 0.25,
+    "took_baseline_top2": true
+   },
+   "cell_pass": [
+    true,
+    true,
+    true
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  },
+  "code-mbpp-610": {
+   "stratum": "code",
+   "divergence": {
+    "kind": "real_break",
+    "index": 39,
+    "ref_gap": 1.5000000596046448,
+    "took_baseline_top2": true
+   },
+   "cell_pass": [
+    false,
+    true,
+    false
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  },
+  "code-mbpp-639": {
+   "stratum": "code",
+   "divergence": {
+    "kind": "near_tie_flip",
+    "index": 10,
+    "ref_gap": 0.0,
+    "took_baseline_top2": false
+   },
+   "cell_pass": [
+    true,
+    true,
+    true
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  },
+  "code-mbpp-7": {
+   "stratum": "code",
+   "divergence": {
+    "kind": "identical",
+    "index": null,
+    "ref_gap": null
+   },
+   "cell_pass": [
+    true,
+    true,
+    true
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  },
+  "code-mbpp-722": {
+   "stratum": "code",
+   "divergence": {
+    "kind": "real_break",
+    "index": 16,
+    "ref_gap": 2.0000000298023224,
+    "took_baseline_top2": true
+   },
+   "cell_pass": [
+    false,
+    false,
+    false
+   ],
+   "base_pass": [
+    false,
+    false,
+    false
+   ]
+  },
+  "code-mbpp-732": {
+   "stratum": "code",
+   "divergence": {
+    "kind": "identical",
+    "index": null,
+    "ref_gap": null
+   },
+   "cell_pass": [
+    true,
+    true,
+    true
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  },
+  "code-mbpp-733": {
+   "stratum": "code",
+   "divergence": {
+    "kind": "identical",
+    "index": null,
+    "ref_gap": null
+   },
+   "cell_pass": [
+    true,
+    true,
+    true
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  },
+  "code-mbpp-757": {
+   "stratum": "code",
+   "divergence": {
+    "kind": "identical",
+    "index": null,
+    "ref_gap": null
+   },
+   "cell_pass": [
+    true,
+    true,
+    true
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  },
+  "code-mbpp-766": {
+   "stratum": "code",
+   "divergence": {
+    "kind": "identical",
+    "index": null,
+    "ref_gap": null
+   },
+   "cell_pass": [
+    true,
+    true,
+    true
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  },
+  "code-mbpp-767": {
+   "stratum": "code",
+   "divergence": {
+    "kind": "real_break",
+    "index": 3,
+    "ref_gap": 0.25,
+    "took_baseline_top2": true
+   },
+   "cell_pass": [
+    true,
+    true,
+    true
+   ],
+   "base_pass": [
+    false,
+    false,
+    false
+   ]
+  },
+  "code-mbpp-773": {
+   "stratum": "code",
+   "divergence": {
+    "kind": "identical",
+    "index": null,
+    "ref_gap": null
+   },
+   "cell_pass": [
+    true,
+    true,
+    true
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  },
+  "code-mbpp-788": {
+   "stratum": "code",
+   "divergence": {
+    "kind": "identical",
+    "index": null,
+    "ref_gap": null
+   },
+   "cell_pass": [
+    true,
+    true,
+    true
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  },
+  "code-mbpp-793": {
+   "stratum": "code",
+   "divergence": {
+    "kind": "real_break",
+    "index": 79,
+    "ref_gap": 1.2500000298023224,
+    "took_baseline_top2": false
+   },
+   "cell_pass": [
+    true,
+    true,
+    true
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  },
+  "code-mbpp-804": {
+   "stratum": "code",
+   "divergence": {
+    "kind": "real_break",
+    "index": 10,
+    "ref_gap": 1.2499999403953552,
+    "took_baseline_top2": false
+   },
+   "cell_pass": [
+    true,
+    true,
+    true
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  },
+  "code-mbpp-85": {
+   "stratum": "code",
+   "divergence": {
+    "kind": "identical",
+    "index": null,
+    "ref_gap": null
+   },
+   "cell_pass": [
+    true,
+    true,
+    true
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  },
+  "code-mbpp-88": {
+   "stratum": "code",
+   "divergence": {
+    "kind": "real_break",
+    "index": 6,
+    "ref_gap": 1.25,
+    "took_baseline_top2": true
+   },
+   "cell_pass": [
+    true,
+    true,
+    true
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  },
+  "code-mbpp-91": {
+   "stratum": "code",
+   "divergence": {
+    "kind": "real_break",
+    "index": 58,
+    "ref_gap": 0.25,
+    "took_baseline_top2": true
+   },
+   "cell_pass": [
+    true,
+    true,
+    true
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  },
+  "math-base-0": {
+   "stratum": "math",
+   "divergence": {
+    "kind": "real_break",
+    "index": 1,
+    "ref_gap": 0.5,
+    "took_baseline_top2": true
+   },
+   "cell_pass": [
+    true,
+    true,
+    true
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  },
+  "math-base-1": {
+   "stratum": "math",
+   "divergence": {
+    "kind": "identical",
+    "index": null,
+    "ref_gap": null
+   },
+   "cell_pass": [
+    true,
+    true,
+    true
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  },
+  "math-base-2": {
+   "stratum": "math",
+   "divergence": {
+    "kind": "real_break",
+    "index": 7,
+    "ref_gap": 1.2500000596046448,
+    "took_baseline_top2": true
+   },
+   "cell_pass": [
+    true,
+    true,
+    true
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  },
+  "math-base-3": {
+   "stratum": "math",
+   "divergence": {
+    "kind": "real_break",
+    "index": 1,
+    "ref_gap": 3.2500000707805157,
+    "took_baseline_top2": true
+   },
+   "cell_pass": [
+    true,
+    true,
+    true
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  },
+  "math-base-4": {
+   "stratum": "math",
+   "divergence": {
+    "kind": "real_break",
+    "index": 27,
+    "ref_gap": 0.25,
+    "took_baseline_top2": true
+   },
+   "cell_pass": [
+    true,
+    true,
+    true
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  },
+  "math-count_div-0": {
+   "stratum": "math",
+   "divergence": {
+    "kind": "real_break",
+    "index": 20,
+    "ref_gap": 0.9999999701976776,
+    "took_baseline_top2": true
+   },
+   "cell_pass": [
+    true,
+    true,
+    true
+   ],
+   "base_pass": [
+    false,
+    false,
+    false
+   ]
+  },
+  "math-count_div-1": {
+   "stratum": "math",
+   "divergence": {
+    "kind": "real_break",
+    "index": 22,
+    "ref_gap": 0.7499999701976776,
+    "took_baseline_top2": true
+   },
+   "cell_pass": [
+    false,
+    false,
+    false
+   ],
+   "base_pass": [
+    false,
+    false,
+    false
+   ]
+  },
+  "math-count_div-2": {
+   "stratum": "math",
+   "divergence": {
+    "kind": "real_break",
+    "index": 24,
+    "ref_gap": 1.5000000149011612,
+    "took_baseline_top2": true
+   },
+   "cell_pass": [
+    true,
+    true,
+    true
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  },
+  "math-count_div-3": {
+   "stratum": "math",
+   "divergence": {
+    "kind": "real_break",
+    "index": 32,
+    "ref_gap": 0.75,
+    "took_baseline_top2": true
+   },
+   "cell_pass": [
+    true,
+    true,
+    true
+   ],
+   "base_pass": [
+    false,
+    false,
+    false
+   ]
+  },
+  "math-count_div-4": {
+   "stratum": "math",
+   "divergence": {
+    "kind": "real_break",
+    "index": 24,
+    "ref_gap": 1.0,
+    "took_baseline_top2": true
+   },
+   "cell_pass": [
+    false,
+    false,
+    false
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  },
+  "math-digit_sum_pow-0": {
+   "stratum": "math",
+   "divergence": {
+    "kind": "real_break",
+    "index": 23,
+    "ref_gap": 0.2500000596046448,
+    "took_baseline_top2": true
+   },
+   "cell_pass": [
+    false,
+    false,
+    false
+   ],
+   "base_pass": [
+    false,
+    false,
+    false
+   ]
+  },
+  "math-digit_sum_pow-1": {
+   "stratum": "math",
+   "divergence": {
+    "kind": "real_break",
+    "index": 0,
+    "ref_gap": 3.0000000037252903,
+    "took_baseline_top2": true
+   },
+   "cell_pass": [
+    false,
+    false,
+    false
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  },
+  "math-digit_sum_pow-2": {
+   "stratum": "math",
+   "divergence": {
+    "kind": "real_break",
+    "index": 23,
+    "ref_gap": 0.4999999403953552,
+    "took_baseline_top2": false
+   },
+   "cell_pass": [
+    false,
+    true,
+    false
+   ],
+   "base_pass": [
+    false,
+    false,
+    false
+   ]
+  },
+  "math-digit_sum_pow-3": {
+   "stratum": "math",
+   "divergence": {
+    "kind": "real_break",
+    "index": 1,
+    "ref_gap": 2.5,
+    "took_baseline_top2": true
+   },
+   "cell_pass": [
+    true,
+    true,
+    true
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  },
+  "math-digit_sum_pow-4": {
+   "stratum": "math",
+   "divergence": {
+    "kind": "real_break",
+    "index": 121,
+    "ref_gap": 0.25,
+    "took_baseline_top2": true
+   },
+   "cell_pass": [
+    false,
+    false,
+    false
+   ],
+   "base_pass": [
+    false,
+    false,
+    false
+   ]
+  },
+  "math-expr-0": {
+   "stratum": "math",
+   "divergence": {
+    "kind": "real_break",
+    "index": 5,
+    "ref_gap": 0.25,
+    "took_baseline_top2": true
+   },
+   "cell_pass": [
+    false,
+    false,
+    false
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  },
+  "math-expr-1": {
+   "stratum": "math",
+   "divergence": {
+    "kind": "real_break",
+    "index": 5,
+    "ref_gap": 0.25,
+    "took_baseline_top2": true
+   },
+   "cell_pass": [
+    false,
+    true,
+    false
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  },
+  "math-expr-2": {
+   "stratum": "math",
+   "divergence": {
+    "kind": "real_break",
+    "index": 5,
+    "ref_gap": 0.7499999701976776,
+    "took_baseline_top2": true
+   },
+   "cell_pass": [
+    true,
+    true,
+    true
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  },
+  "math-expr-3": {
+   "stratum": "math",
+   "divergence": {
+    "kind": "real_break",
+    "index": 13,
+    "ref_gap": 1.0000000298023224,
+    "took_baseline_top2": true
+   },
+   "cell_pass": [
+    true,
+    true,
+    false
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  },
+  "math-expr-4": {
+   "stratum": "math",
+   "divergence": {
+    "kind": "real_break",
+    "index": 65,
+    "ref_gap": 0.875,
+    "took_baseline_top2": false
+   },
+   "cell_pass": [
+    false,
+    false,
+    false
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  },
+  "math-gcd_lcm-0": {
+   "stratum": "math",
+   "divergence": {
+    "kind": "real_break",
+    "index": 202,
+    "ref_gap": 1.7499999552965164,
+    "took_baseline_top2": true
+   },
+   "cell_pass": [
+    true,
+    true,
+    true
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  },
+  "math-gcd_lcm-1": {
+   "stratum": "math",
+   "divergence": {
+    "kind": "real_break",
+    "index": 3,
+    "ref_gap": 0.25,
+    "took_baseline_top2": true
+   },
+   "cell_pass": [
+    true,
+    true,
+    true
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  },
+  "math-gcd_lcm-2": {
+   "stratum": "math",
+   "divergence": {
+    "kind": "real_break",
+    "index": 3,
+    "ref_gap": 0.5,
+    "took_baseline_top2": false
+   },
+   "cell_pass": [
+    true,
+    true,
+    true
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  },
+  "math-gcd_lcm-3": {
+   "stratum": "math",
+   "divergence": {
+    "kind": "real_break",
+    "index": 0,
+    "ref_gap": 1.7500000149011612,
+    "took_baseline_top2": true
+   },
+   "cell_pass": [
+    true,
+    true,
+    true
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  },
+  "math-gcd_lcm-4": {
+   "stratum": "math",
+   "divergence": {
+    "kind": "real_break",
+    "index": 0,
+    "ref_gap": 1.5,
+    "took_baseline_top2": true
+   },
+   "cell_pass": [
+    true,
+    true,
+    true
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  },
+  "math-modpow-0": {
+   "stratum": "math",
+   "divergence": {
+    "kind": "real_break",
+    "index": 50,
+    "ref_gap": 0.5000000596046448,
+    "took_baseline_top2": true
+   },
+   "cell_pass": [
+    true,
+    true,
+    true
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  },
+  "math-modpow-1": {
+   "stratum": "math",
+   "divergence": {
+    "kind": "real_break",
+    "index": 72,
+    "ref_gap": 1.0,
+    "took_baseline_top2": true
+   },
+   "cell_pass": [
+    true,
+    true,
+    true
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  },
+  "math-modpow-2": {
+   "stratum": "math",
+   "divergence": {
+    "kind": "real_break",
+    "index": 27,
+    "ref_gap": 1.4999999701976776,
+    "took_baseline_top2": true
+   },
+   "cell_pass": [
+    true,
+    true,
+    true
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  },
+  "math-modpow-3": {
+   "stratum": "math",
+   "divergence": {
+    "kind": "real_break",
+    "index": 26,
+    "ref_gap": 0.2500000596046448,
+    "took_baseline_top2": true
+   },
+   "cell_pass": [
+    true,
+    true,
+    true
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  },
+  "math-modpow-4": {
+   "stratum": "math",
+   "divergence": {
+    "kind": "real_break",
+    "index": 50,
+    "ref_gap": 0.25,
+    "took_baseline_top2": true
+   },
+   "cell_pass": [
+    false,
+    false,
+    false
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  },
+  "math-series-0": {
+   "stratum": "math",
+   "divergence": {
+    "kind": "real_break",
+    "index": 2,
+    "ref_gap": 0.75,
+    "took_baseline_top2": true
+   },
+   "cell_pass": [
+    false,
+    false,
+    false
+   ],
+   "base_pass": [
+    false,
+    false,
+    false
+   ]
+  },
+  "math-series-1": {
+   "stratum": "math",
+   "divergence": {
+    "kind": "real_break",
+    "index": 0,
+    "ref_gap": 1.0,
+    "took_baseline_top2": true
+   },
+   "cell_pass": [
+    true,
+    true,
+    true
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  },
+  "math-series-2": {
+   "stratum": "math",
+   "divergence": {
+    "kind": "real_break",
+    "index": 53,
+    "ref_gap": 0.7500000596046448,
+    "took_baseline_top2": true
+   },
+   "cell_pass": [
+    false,
+    false,
+    false
+   ],
+   "base_pass": [
+    false,
+    false,
+    false
+   ]
+  },
+  "math-series-3": {
+   "stratum": "math",
+   "divergence": {
+    "kind": "real_break",
+    "index": 2,
+    "ref_gap": 0.25,
+    "took_baseline_top2": true
+   },
+   "cell_pass": [
+    false,
+    true,
+    false
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  },
+  "math-series-4": {
+   "stratum": "math",
+   "divergence": {
+    "kind": "real_break",
+    "index": 0,
+    "ref_gap": 0.4999999701976776,
+    "took_baseline_top2": true
+   },
+   "cell_pass": [
+    true,
+    true,
+    true
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  },
+  "math-tank-0": {
+   "stratum": "math",
+   "divergence": {
+    "kind": "real_break",
+    "index": 19,
+    "ref_gap": 2.0000001043081284,
+    "took_baseline_top2": true
+   },
+   "cell_pass": [
+    true,
+    true,
+    true
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  },
+  "math-tank-1": {
+   "stratum": "math",
+   "divergence": {
+    "kind": "real_break",
+    "index": 19,
+    "ref_gap": 2.2500000596046448,
+    "took_baseline_top2": true
+   },
+   "cell_pass": [
+    true,
+    true,
+    true
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  },
+  "math-tank-2": {
+   "stratum": "math",
+   "divergence": {
+    "kind": "real_break",
+    "index": 5,
+    "ref_gap": 0.25,
+    "took_baseline_top2": true
+   },
+   "cell_pass": [
+    true,
+    true,
+    true
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  },
+  "math-tank-3": {
+   "stratum": "math",
+   "divergence": {
+    "kind": "real_break",
+    "index": 36,
+    "ref_gap": 1.25,
+    "took_baseline_top2": false
+   },
+   "cell_pass": [
+    true,
+    true,
+    true
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  },
+  "math-tank-4": {
+   "stratum": "math",
+   "divergence": {
+    "kind": "real_break",
+    "index": 0,
+    "ref_gap": 0.5,
+    "took_baseline_top2": true
+   },
+   "cell_pass": [
+    true,
+    true,
+    true
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  },
+  "needle-16k-d10": {
+   "stratum": "long_context",
+   "divergence": {
+    "kind": "identical",
+    "index": null,
+    "ref_gap": null
+   },
+   "cell_pass": [
+    true,
+    true,
+    true
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  },
+  "needle-16k-d30": {
+   "stratum": "long_context",
+   "divergence": {
+    "kind": "real_break",
+    "index": 0,
+    "ref_gap": 3.2500000968575478,
+    "took_baseline_top2": false
+   },
+   "cell_pass": [
+    true,
+    true,
+    true
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  },
+  "needle-16k-d50": {
+   "stratum": "long_context",
+   "divergence": {
+    "kind": "identical",
+    "index": null,
+    "ref_gap": null
+   },
+   "cell_pass": [
+    true,
+    true,
+    true
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  },
+  "needle-16k-d70": {
+   "stratum": "long_context",
+   "divergence": {
+    "kind": "identical",
+    "index": null,
+    "ref_gap": null
+   },
+   "cell_pass": [
+    true,
+    true,
+    true
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  },
+  "needle-16k-d90": {
+   "stratum": "long_context",
+   "divergence": {
+    "kind": "real_break",
+    "index": 1,
+    "ref_gap": 3.5000000447034836,
+    "took_baseline_top2": true
+   },
+   "cell_pass": [
+    true,
+    true,
+    true
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  },
+  "needle-32k-d10": {
+   "stratum": "long_context",
+   "divergence": {
+    "kind": "real_break",
+    "index": 0,
+    "ref_gap": 2.2499999403953552,
+    "took_baseline_top2": true
+   },
+   "cell_pass": [
+    true,
+    true,
+    true
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  },
+  "needle-32k-d30": {
+   "stratum": "long_context",
+   "divergence": {
+    "kind": "real_break",
+    "index": 1,
+    "ref_gap": 2.000000089406967,
+    "took_baseline_top2": true
+   },
+   "cell_pass": [
+    true,
+    true,
+    true
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  },
+  "needle-32k-d50": {
+   "stratum": "long_context",
+   "divergence": {
+    "kind": "real_break",
+    "index": 9,
+    "ref_gap": 4.250000108964741,
+    "took_baseline_top2": true
+   },
+   "cell_pass": [
+    true,
+    true,
+    true
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  },
+  "needle-32k-d70": {
+   "stratum": "long_context",
+   "divergence": {
+    "kind": "real_break",
+    "index": 18,
+    "ref_gap": 3.2500001192092896,
+    "took_baseline_top2": true
+   },
+   "cell_pass": [
+    true,
+    true,
+    true
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  },
+  "needle-32k-d90": {
+   "stratum": "long_context",
+   "divergence": {
+    "kind": "real_break",
+    "index": 1,
+    "ref_gap": 0.5,
+    "took_baseline_top2": false
+   },
+   "cell_pass": [
+    true,
+    true,
+    true
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  },
+  "needle-8k-d10": {
+   "stratum": "long_context",
+   "divergence": {
+    "kind": "real_break",
+    "index": 0,
+    "ref_gap": 2.500000037252903,
+    "took_baseline_top2": true
+   },
+   "cell_pass": [
+    true,
+    true,
+    true
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  },
+  "needle-8k-d30": {
+   "stratum": "long_context",
+   "divergence": {
+    "kind": "identical",
+    "index": null,
+    "ref_gap": null
+   },
+   "cell_pass": [
+    true,
+    true,
+    true
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  },
+  "needle-8k-d50": {
+   "stratum": "long_context",
+   "divergence": {
+    "kind": "real_break",
+    "index": 1,
+    "ref_gap": 3.750000037252903,
+    "took_baseline_top2": false
+   },
+   "cell_pass": [
+    false,
+    true,
+    true
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  },
+  "needle-8k-d70": {
+   "stratum": "long_context",
+   "divergence": {
+    "kind": "identical",
+    "index": null,
+    "ref_gap": null
+   },
+   "cell_pass": [
+    true,
+    true,
+    true
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  },
+  "needle-8k-d90": {
+   "stratum": "long_context",
+   "divergence": {
+    "kind": "identical",
+    "index": null,
+    "ref_gap": null
+   },
+   "cell_pass": [
+    true,
+    true,
+    true
+   ],
+   "base_pass": [
+    true,
+    true,
+    true
+   ]
+  }
+ }
+}
